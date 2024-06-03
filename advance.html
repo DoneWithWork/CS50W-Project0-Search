@@ -15,12 +15,30 @@
           </ul>
         </nav>
       </div>
-      <div>
-        <form action="https://www.google.com/search">
-          <input type="text" name="q" />
-          <input type="submit" value="Google Search" />
-        </form>
+      <div class="advance-search-navbar">
+        <p>Advance Search</p>
       </div>
+
+      <form action="https://www.google.com/search">
+        <div class="advance-form">
+          <div class="advance-labels labels">
+            <label for="all">All these words:</label>
+            <label for="this">This exact word or phrase:</label>
+            <label for="any">Any of these words:</label>
+            <label for="none">None of these words:</label>
+          </div>
+          <div class="advance-labels">
+            <input type="text" name="as_q" />
+            <input type="text" name="as_epq" />
+            <input type="text" name="as_oq" />
+            <input type="text" name="as_eq" />
+          </div>
+        </div>
+
+        <div class="advance-search-btn">
+          <input type="submit" value="Advance Search" />
+        </div>
+      </form>
     </section>
   </body>
 </html>

@@ -23,6 +23,7 @@
           display: flex;
           flex-direction: column;
           align-items: center;
+          justify-content: center;
         "
       >
         <img
@@ -33,20 +34,22 @@
           style="margin: 20px auto"
           aria-placeholder="google logo"
         />
-        <form action="https://www.google.com/search" class="search-box">
-          <img
-            src="assets/search.svg"
-            alt="search icon"
-            aria-label="search icon"
-            width="20px"
-            aria-placeholder="search icon"
-          />
-          <input type="text" name="q" placeholder="Search..." />
+        <form action="https://www.google.com/search" class="form">
+          <div class="search-box">
+            <img
+              src="assets/search.svg"
+              alt="search icon"
+              aria-label="search icon"
+              width="20px"
+              aria-placeholder="search icon"
+            />
+            <input type="text" name="q" placeholder="Search..." />
+          </div>
+          <div class="btn">
+            <input type="submit" name="btnK" value="Google Search" />
+            <input type="submit" value="I'm feeling lucky" name="btnI" />
+          </div>
         </form>
-        <div class="btn">
-          <input type="submit" value="Google Search" />
-          <input type="submit" value="I'm Feeling Lucky" />
-        </div>
       </div>
     </section>
   </body>

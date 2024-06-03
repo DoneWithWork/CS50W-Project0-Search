@@ -21,6 +21,7 @@
           display: flex;
           flex-direction: column;
           align-items: center;
+          justify-content: center;
         "
       >
         <div class="google-images">
@@ -34,20 +35,21 @@
           />
           <p>images</p>
         </div>
-        <form action="http://images.google.com/images" class="search-box">
-          <img
-            src="assets/search.svg"
-            alt="search icon"
-            aria-label="search icon"
-            width="20px"
-            aria-placeholder="search icon"
-          />
-          <input type="text" name="q" placeholder="Search..." />
+        <form action="http://images.google.com/images" class="form">
+          <div class="search-box">
+            <img
+              src="assets/search.svg"
+              alt="search icon"
+              aria-label="search icon"
+              width="20px"
+              aria-placeholder="search icon"
+            />
+            <input type="text" name="q" placeholder="Search..." />
+          </div>
+          <div class="btn">
+            <input type="submit" value="Image Search" />
+          </div>
         </form>
-        <div class="btn">
-          <input type="submit" value="Google Search" />
-          <input type="submit" value="I'm Feeling Lucky" />
-        </div>
       </div>
     </section>
   </body>
